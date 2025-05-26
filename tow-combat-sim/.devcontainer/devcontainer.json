@@ -1,0 +1,16 @@
+{
+  "name": "Node.js",
+  // This line specifies to use a pre-built image that includes Node.js 20
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
+
+  // You can add VS Code extensions you want to be pre-installed here
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",        // For ESLint integration
+        "esbenp.prettier-vscode",    // If you use Prettier
+        "bradlc.vscode-tailwindcss"  // For Tailwind CSS autocompletion & linting
+      ]
+    }
+  }
+}
