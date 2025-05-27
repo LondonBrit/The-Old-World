@@ -196,7 +196,11 @@ const App = () => {
 
         const woundsU1toU2 = calculateExpectedWounds(unit1, unit2);
         const woundsU2toU1 = calculateExpectedWounds(unit2, unit1);
-        setResults({ u1ToU2, u2ToU1, combatResU1: woundsU1toU2 - woundsU2toU1 });
+        setResults({ 
+            u1ToU2: woundsU1toU2,      // Key 'u1ToU2' gets its value from the variable 'woundsU1toU2'
+            u2ToU1: woundsU2toU1,      // Key 'u2ToU1' gets its value from the variable 'woundsU2toU1'
+            combatResU1: woundsU1toU2 - woundsU2toU1 
+        });
     }, [unit1, unit2]);
 
     return (
